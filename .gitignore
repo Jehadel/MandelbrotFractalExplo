@@ -1,0 +1,10 @@
+# vim temp files
+*.swp
+*.swo
+<
+
+# debug files
+*.debug
+
+#ignore folder containing .love
+Dist/
