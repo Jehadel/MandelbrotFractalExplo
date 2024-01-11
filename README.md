@@ -1,18 +1,23 @@
-# Asteroids Race (squelette)
+# Mandelbrot’s fractal exploration
 
-Base de jeu inspirée de Space Race (1973), second jeu créé par Atari après Pong.
+A simple tool to visualize the famous fractal.
+More on the subject [here](https://en.wikipedia.org/wiki/Mandelbrot_set).
 
-À améliorer (graphismes, sons, etc.) ou à simplement  modifier sans vergogne ! 
-Créé pour servir de support lors des ateliers « Code Club » du Cimelab.
+![Screen snapshot](./src/images/Capture.png)
 
-<!-- TODO -->
+[You can try it on line](https://jehadel.github.io/MandelbrotFractalExplo/) (not recommanded - ressource-consuming !)
+ 
 
-Pour lancer le jeu :
+Launch the demo :
 
         make play
 
-En faire une version exécutable sur le web (avec love.js) : 
+Build a version  (with love.js) : 
 
         make js
 
 
+TODO : 
+
+Improve interactivity
+Add colors !
