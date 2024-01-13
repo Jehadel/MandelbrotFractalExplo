@@ -22,6 +22,8 @@ function init()
   maxIter = ITER_INI 
   
   diveSpeed = DIVE_INI
+
+  showHelp = true 
   
 end
 
@@ -114,10 +116,13 @@ end
 function love.draw()
   
   love.graphics.draw(img)
-  love.graphics.print('Click to define a target point', 10, 10)
-  love.graphics.print('Right/Left to change dive speed: '..tostring(diveSpeed), 10, 30)
-  love.graphics.print('Up/Down to change max iterations: '..tostring(maxIter), 10, 50)
-  love.graphics.print('r to reset, echap to quit', 10, 70)
+  if showHelp then
+    love.graphics.print('Click to define a target point', 10, 10)
+    love.graphics.print('Right/Left to change dive speed: '..tostring(diveSpeed), 10, 30)
+    love.graphics.print('Up/Down to change max iterations: '..tostring(maxIter), 10, 50)
+    love.graphics.print('r to reset, echap to quit', 10, 70)
+    love.graphics.print('h to show/hide these instructions', 10, 90)
+  end
 
 end
 
@@ -129,6 +134,10 @@ function love.keypressed(key)
 
   if key == 'r' then
     init()
+  end
+
+  if key == 'h' then
+    showHelp = not showHelp
   end
 
 end
